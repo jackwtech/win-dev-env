@@ -1,8 +1,3 @@
-# win-dev-env
-
-## Use powershell to set up dev environment in Windows
-
-```ps1
 # install choco
 Set-ExecutionPolicy Bypass -Scope Process -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
@@ -24,6 +19,3 @@ choco install nodejs --version=20.2 -y
 New-Item -Path $HOME\.ssh -ItemType Directory
 ssh-keygen -t rsa -b 4096 -f "$HOME\.ssh\id_rsa"
 Get-Content $HOME\.ssh\id_rsa.pub
-```
-
-
